@@ -1,0 +1,30 @@
+.common-button {
+  padding: 20px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #19171A;
+  color: #FDFBFE;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.common-button:active {
+  background: #2a2a2a;
+}
+
+.common-button img.google-logo {
+  width: 20px;
+  height: 20px;
+}

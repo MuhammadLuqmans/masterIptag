@@ -1,0 +1,210 @@
+@import "tailwindcss";
+/* 
+---break--- */
+@plugin "tailwindcss-animate";
+/* 
+---break--- */
+/* @custom-variant dark (&:is(.dark *)); */
+
+/* CSS Custom Properties per i colori del tema dinamico */
+:root {
+  /* Primary colors - fallback values */
+  --color-primary: #011627;
+  --color-primary-100: #000408;
+  --color-primary-200: #000910;
+  --color-primary-300: #010d18;
+  --color-primary-400: #011220;
+  --color-primary-500: #011627;
+  --color-primary-600: #034a83;
+  --color-primary-700: #067ddf;
+  --color-primary-800: #48aafa;
+  --color-primary-900: #a4d5fd;
+
+  /* Secondary colors - fallback values */
+  --color-secondary: #fdfffc;
+  --color-secondary-100: #226500;
+  --color-secondary-200: #43ca00;
+  --color-secondary-300: #75ff30;
+  --color-secondary-400: #b8ff95;
+  --color-secondary-500: #fdfffc;
+  --color-secondary-600: #fcfffb;
+  --color-secondary-700: #fdfffc;
+  --color-secondary-800: #fefffd;
+  --color-secondary-900: #fefffe;
+
+  /* Accent colors - fallback values */
+  --color-accent: #2ec4b6;
+  --color-accent-100: #092724;
+  --color-accent-200: #124e48;
+  --color-accent-300: #1b746c;
+  --color-accent-400: #249b8f;
+  --color-accent-500: #2ec4b6;
+  --color-accent-600: #50d6c9;
+  --color-accent-700: #7ce0d6;
+  --color-accent-800: #a7eae4;
+  --color-accent-900: #d3f5f1;
+
+  /* Destructive colors - fallback values */
+  --color-destructive: #e71d36;
+  --color-destructive-100: #2f050a;
+  --color-destructive-200: #5e0a14;
+  --color-destructive-300: #8d0f1e;
+  --color-destructive-400: #bc1427;
+  --color-destructive-500: #e71d36;
+  --color-destructive-600: #ec4a5d;
+  --color-destructive-700: #f17785;
+  --color-destructive-800: #f6a5ae;
+  --color-destructive-900: #fad2d6;
+
+  /* Warning colors - fallback values */
+  --color-warning: #ff9f1c;
+  --color-warning-100: #382100;
+  --color-warning-200: #704100;
+  --color-warning-300: #a86200;
+  --color-warning-400: #e08300;
+  --color-warning-500: #ff9f1c;
+  --color-warning-600: #ffb347;
+  --color-warning-700: #ffc675;
+  --color-warning-800: #ffd9a3;
+  --color-warning-900: #ffecd1;
+}
+
+
+.rainbow-border {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #f7a233, #fce303, #a4de02, #03e387, #03a3e3, #a25df2, #d103e3, #f7a233) border-box;
+  background-size: 200% 200%;
+  animation: spin-gradient 3s linear infinite;
+  border-radius: 50%;
+}
+
+/* Bordo disabilitato - grigio statico */
+.rainbow-border.disabled {
+  background: linear-gradient(white, white) padding-box,
+              #d1d5db border-box; /* Grigio statico */
+  animation: none; /* Ferma l'animazione */
+}
+
+@keyframes spin-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+/* 
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+/* 
+---break--- */
+
+/* Aggiungi questo al tuo CSS principale */
+.terms-wrapper h1, .privacy-wrapper h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.terms-wrapper h2, .privacy-wrapper h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem 0;
+  color: #444;
+}
+
+.terms-wrapper h3, .privacy-wrapper h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+  color: #555;
+}
+
+.terms-wrapper p, .privacy-wrapper p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.terms-wrapper ul, .privacy-wrapper ul {
+  margin: 0.5rem 0;
+  padding-left: 2rem;
+}
+
+.terms-wrapper li, .privacy-wrapper li {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.scrollable-content {
+  line-height: 1.6;
+}

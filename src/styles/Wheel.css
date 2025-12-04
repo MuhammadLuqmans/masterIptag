@@ -1,0 +1,22 @@
+/* Responsive design */
+@media (max-width: 480px) {
+  .wheel-container {
+    padding: 0 16px;
+    gap: 16px;
+  }
+  
+  .wheel-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .wheel-controls {
+    padding: 0 16px 16px;
+  }
+  
+  .result-message {
+    font-size: 15px;
+    padding: 10px 14px;
+    max-width: 260px;
+  }
+}
